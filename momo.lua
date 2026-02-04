@@ -3,7 +3,7 @@ module("luci.controller.momo", package.seeall)
 function index()
     -- Menu utama di LuCI
     entry({"admin", "services", "momo"}, firstchild(), _("Momo"), 90)
-    entry({"admin", "services", "momo", "backup"}, template("momo"), _("Backup"), 45).leaf = true
+    entry({"admin", "services", "momo", "backup"}, template("momo"), _("Backup"), 35).leaf = true
     entry({"admin", "services", "momo", "do_backup"}, call("action_backup")).leaf = true
     entry({"admin", "services", "momo", "do_restore"}, call("action_restore")).leaf = true
 end
