@@ -15,10 +15,10 @@ install_nikki() {
     echo "🚀 Mulai install nikki.lua & backup.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$NIKKI_CONTROLLER" https://raw.githubusercontent.com/Yogxx/test/refs/heads/main/nikki.lua
+    wget -O "$NIKKI_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/nikki.lua
 
     # Download view
-    wget -O "$NIKKI_VIEW" https://raw.githubusercontent.com/Yogxx/test/refs/heads/main/backup.htm
+    wget -O "$NIKKI_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/backup.htm
 
     # Set permission
     chmod 644 "$NIKKI_CONTROLLER" "$NIKKI_VIEW"
@@ -42,10 +42,10 @@ install_momo() {
     echo "🚀 Mulai install momo.lua & momo.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$MOMO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/test/refs/heads/main/momo.lua
+    wget -O "$MOMO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/momo.lua
 
     # Download view
-    wget -O "$MOMO_VIEW" https://raw.githubusercontent.com/Yogxx/test/refs/heads/main/momo.htm
+    wget -O "$MOMO_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/momo.htm
 
     chmod 644 "$MOMO_CONTROLLER" "$MOMO_VIEW"
 
