@@ -32,6 +32,7 @@ Tested on:
 
 * OpenWrt 23.xx
 * OpenWrt 24.xx
+* OpenWrt 25.xx
 * LuCI Web Interface
 
 ---
