@@ -15,9 +15,13 @@ MOMO_VIEW="/usr/lib/lua/luci/view/momo.htm"
 SSCLASH_CONTROLLER="/usr/lib/lua/luci/controller/ssclash.lua"
 SSCLASH_VIEW="/usr/lib/lua/luci/view/ssclash.htm"
 
+# Lokasi file Clashoo
+CLASHOO_CONTROLLER="/usr/lib/lua/luci/controller/clashoo.lua"
+CLASHOO_VIEW="/usr/lib/lua/luci/view/clashoo.htm"
+
 
 install_nikki() {
-    echo "🚀 Mulai install nikki.lua & backup.htm ke LuCI ..."
+    echo "🚀 Mulai install nikki.lua & clashoo.htm ke LuCI ..."
 
     # Download controller
     wget -O "$NIKKI_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Nikki/nikki.lua
@@ -35,7 +39,7 @@ install_nikki() {
 }
 
 uninstall_nikki() {
-    echo "🗑️  Mulai uninstall nikki.lua & backup.htm ..."
+    echo "🗑️  Mulai uninstall nikki.lua & clashoo.htm ..."
 
     rm -f "$NIKKI_CONTROLLER" "$NIKKI_VIEW"
 
@@ -91,6 +95,33 @@ uninstall_ssclash() {
     echo "✅ Uninstall SSClash selesai!"
 }
 
+install_clashoo() {
+    echo "🚀 Mulai install clashoo.lua & clashoo.htm ke LuCI ..."
+
+    # Download controller
+    wget -O "$CLASHOO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Clashoo/clashoo.lua
+
+    # Download view
+    wget -O "$CLASHOO_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Clashoo/clashoo.htm
+
+    # Set permission
+    chmod 644 "$CLASHOO_CONTROLLER" "$CLASHOO_VIEW"
+
+    # Restart LuCI webserver
+    /etc/init.d/uhttpd restart
+
+    echo "✅ Install Clashoo selesai!"
+}
+
+uninstall_clashoo() {
+    echo "🗑️  Mulai uninstall clashoo.lua & clashoo.htm ..."
+
+    rm -f "$CLASHOO_CONTROLLER" "$CLASHOO_VIEW"
+
+    /etc/init.d/uhttpd restart
+    echo "✅ Uninstall Clashoo selesai!"
+}
+
 echo "=============================="
 echo "   Manage LuCI Scripts"
 echo "=============================="
@@ -100,6 +131,8 @@ echo "3) Install Backup Momo"
 echo "4) Uninstall Backup Momo"
 echo "5) Install Backup SSClash"
 echo "6) Uninstall Backup SSClash"
+echo "7) Install Backup Clashoo"
+echo "8) Uninstall Backup Clashoo"
 echo "=============================="
 printf "Pilih opsi [1-6]: "
 
@@ -112,5 +145,7 @@ case "$choice" in
     4) uninstall_momo ;;
     5) install_ssclash ;;
     6) uninstall_ssclash ;;
+    1) install_clashoo ;;
+    2) uninstall_clashoo ;;
     *) echo "❌ Pilihan tidak valid!"; exit 1 ;;
 esac
