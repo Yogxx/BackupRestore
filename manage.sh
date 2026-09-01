@@ -134,7 +134,7 @@ echo "6) Uninstall Backup SSClash"
 echo "7) Install Backup Clashoo"
 echo "8) Uninstall Backup Clashoo"
 echo "=============================="
-printf "Pilih opsi [1-6]: "
+printf "Pilih opsi [1-8]: "
 
 read choice < /dev/tty
 
