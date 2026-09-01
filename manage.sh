@@ -145,7 +145,7 @@ case "$choice" in
     4) uninstall_momo ;;
     5) install_ssclash ;;
     6) uninstall_ssclash ;;
-    1) install_clashoo ;;
-    2) uninstall_clashoo ;;
+    7) install_clashoo ;;
+    8) uninstall_clashoo ;;
     *) echo "❌ Pilihan tidak valid!"; exit 1 ;;
 esac
