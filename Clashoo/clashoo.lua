@@ -17,7 +17,7 @@ function action_backup()
     local date = os.date("%Y-%m-%d_%H-%M-%S")
     local backup_file = "/tmp/clashoo_backup-" .. date .. ".tar.gz"
 
-    sys.call("tar -czf " .. backup_file .. " /etc/config/clashoo /etc/clashoo/ /usr/share/clashoo/config >/dev/null 2>&1")
+    sys.call("tar -czf " .. backup_file .. " /etc/config/clashoo /etc/clashoo /usr/share/clashoo/config >/dev/null 2>&1")
 
     http.header('Content-Disposition', 'attachment; filename="' .. fs.basename(backup_file) .. '"')
     http.prepare_content("application/gzip")
