@@ -1,0 +1,13 @@
+{
+  "admin/services/openclash/configeditor": {
+    "title": "Config Editor",
+    "order": 25,
+    "action": {
+      "type": "view",
+      "path": "services/configeditor"
+    },
+    "depends": {
+      "acl": ["luci-app-openclash"]
+    }
+  }
+}
