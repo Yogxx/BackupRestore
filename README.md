@@ -21,7 +21,7 @@ This script automatically installs a simple menu to manage backup and restore co
 Copy and paste this command in the OpenWrt terminal:
 
 ```sh
-wget -O - https://raw.githubusercontent.com/Yogxx/BackupRestore/main/manage.sh | sh
+wget -O - https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/manage.sh | sh
 ```
 
 ---
