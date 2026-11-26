@@ -24,10 +24,10 @@ install_nikki() {
     echo "🚀 Mulai install nikki.lua & clashoo.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$NIKKI_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Nikki/nikki.lua
+    wget -O "$NIKKI_CONTROLLER" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Nikki/nikki.lua
 
     # Download view
-    wget -O "$NIKKI_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Nikki/nikki.htm
+    wget -O "$NIKKI_VIEW" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Nikki/nikki.htm
 
     # Set permission
     chmod 644 "$NIKKI_CONTROLLER" "$NIKKI_VIEW"
@@ -51,10 +51,10 @@ install_momo() {
     echo "🚀 Mulai install momo.lua & momo.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$MOMO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Momo/momo.lua
+    wget -O "$MOMO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Momo/momo.lua
 
     # Download view
-    wget -O "$MOMO_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Momo/momo.htm
+    wget -O "$MOMO_VIEW" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Momo/momo.htm
 
     chmod 644 "$MOMO_CONTROLLER" "$MOMO_VIEW"
 
@@ -75,10 +75,10 @@ install_ssclash() {
     echo "🚀 Mulai install ssclash.lua & ssclash.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$SSCLASH_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/SSClash/ssclash.lua
+    wget -O "$SSCLASH_CONTROLLER" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/SSClash/ssclash.lua
 
     # Download view
-    wget -O "$SSCLASH_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/SSClash/ssclash.htm
+    wget -O "$SSCLASH_VIEW" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/SSClash/ssclash.htm
 
     chmod 644 "$SSCLASH_CONTROLLER" "$SSCLASH_VIEW"
 
@@ -99,10 +99,10 @@ install_clashoo() {
     echo "🚀 Mulai install clashoo.lua & clashoo.htm ke LuCI ..."
 
     # Download controller
-    wget -O "$CLASHOO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Clashoo/clashoo.lua
+    wget -O "$CLASHOO_CONTROLLER" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Clashoo/clashoo.lua
 
     # Download view
-    wget -O "$CLASHOO_VIEW" https://raw.githubusercontent.com/Yogxx/BackupRestore/refs/heads/main/Clashoo/clashoo.htm
+    wget -O "$CLASHOO_VIEW" https://raw.githubusercontent.com/Yogxx/OpenWrt-Backup/main/Clashoo/clashoo.htm
 
     # Set permission
     chmod 644 "$CLASHOO_CONTROLLER" "$CLASHOO_VIEW"
